@@ -55,10 +55,6 @@ const LANGUAGES = [
   'ro',
   'ru',
   'tr',
-  'sv',
-  'da',
-  'fi',
-  'hr',
 ] as const
 
 const PAGE_SIZE = 10
@@ -86,7 +82,6 @@ function statusBadgeClass(status: string) {
 export default function AdminUsersPage() {
   const t = useTranslations('admin')
   const tCommon = useTranslations('common')
-  const tRegister = useTranslations('auth.register')
   const tBilling = useTranslations('billing')
   const tLang = useTranslations('languages')
   const tTarget = useTranslations('targetLanguages')
@@ -332,13 +327,7 @@ export default function AdminUsersPage() {
       })
       if (!res.ok) {
         const data = await res.json().catch(() => ({}))
-        throw new Error(
-          data.detail === 'Username already taken'
-            ? tRegister('usernameTaken')
-            : data.detail === 'Email already taken'
-              ? tRegister('emailTaken')
-              : t('createUserError')
-        )
+        throw new Error(data.detail || t('createUserError'))
       }
       setShowCreate(false)
       setForm({
@@ -357,13 +346,8 @@ export default function AdminUsersPage() {
         roleFilter,
         activeFilter
       )
-    } catch (err) {
-      const knownErrors = [tRegister('usernameTaken'), tRegister('emailTaken')]
-      setError(
-        err instanceof Error && knownErrors.includes(err.message)
-          ? err.message
-          : t('createUserError')
-      )
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : t('createUserError'))
     } finally {
       setCreateSaving(false)
     }
@@ -379,7 +363,8 @@ export default function AdminUsersPage() {
     setActivePending(null)
     setActionBusy(null)
     if (!res.ok) {
-      setError(t('updateUserError'))
+      const data = await res.json().catch(() => ({}))
+      setError(data.detail || t('updateUserError'))
       return
     }
     await loadUsers(
@@ -399,7 +384,8 @@ export default function AdminUsersPage() {
     setDeletePending(null)
     setActionBusy(null)
     if (!res.ok) {
-      setError(t('deleteUserError'))
+      const data = await res.json().catch(() => ({}))
+      setError(data.detail || t('deleteUserError'))
     } else {
       const newTotal = total - 1
       const maxPage = Math.max(0, Math.ceil(newTotal / PAGE_SIZE) - 1)
