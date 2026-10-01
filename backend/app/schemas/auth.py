@@ -34,6 +34,7 @@ SUPPORTED_LANGUAGES = {
     "da",
     "fi",
     "hr",
+    "ar",
 }
 
 SUPPORTED_TARGET_LANGUAGES: set[str] = {
@@ -61,13 +62,13 @@ def get_available_languages() -> list[str]:
 
 SUPPORTED_UI_LOCALES: set[str] = {
     "en",
+    "de",
     "es",
     "fr",
-    "pt",
-    "de",
     "it",
-    "pl",
     "nl",
+    "pl",
+    "pt",
     "ro",
     "ru",
     "tr",
@@ -75,6 +76,7 @@ SUPPORTED_UI_LOCALES: set[str] = {
     "da",
     "fi",
     "hr",
+    "ar",
 }
 
 VALID_LEARNING_GOALS: set[str] = {
