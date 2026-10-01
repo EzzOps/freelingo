@@ -15,6 +15,7 @@ export type TargetLanguageScript =
   | 'hiragana-katakana-kanji'
   | 'hangul'
   | 'simplified-hanzi'
+  | 'arabic'
 
 export type TargetLanguageRomanization =
   | 'romaji'
@@ -62,6 +63,11 @@ export const TARGET_LANGUAGE_CAPABILITIES: Record<
     fontClass: 'font-target-zh',
     usesWordSpacing: false,
     romanization: 'pinyin',
+  },
+  'ar-EG': {
+    script: 'arabic',
+    fontClass: 'font-target-ar',
+    usesWordSpacing: false,
   },
 }
 
@@ -145,6 +151,13 @@ export const TARGET_LANGUAGE_CATALOG: TargetLanguage[] = [
     nameEn: 'Chinese (Mainland China)',
     flagPath: '/flags/china.jpg',
     iso639: 'zh',
+  }),
+  withCapabilities({
+    code: 'ar-EG',
+    name: 'العربية (مصر)',
+    nameEn: 'Arabic (Egypt)',
+    flagPath: '/flags/egypt.jpg',
+    iso639: 'ar',
   }),
 ]
 
