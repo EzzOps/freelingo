@@ -1274,7 +1274,8 @@
     "lessonsLabel": "Уроки",
     "flashcardsLabel": "Карточки",
     "viewDetails": "Подробнее",
-    "supportedLanguages": "Доступные языки"
+    "supportedLanguages": "Доступные языки",
+    "ar": "Arabic"
   },
   "targetLanguages": {
     "en-US": "Американский английский",

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { createTranslator } from 'next-intl'
+import ar from '../../../messages/ar.json'
 import de from '../../../messages/de.json'
 import da from '../../../messages/da.json'
 import fi from '../../../messages/fi.json'
@@ -16,7 +17,7 @@ import ru from '../../../messages/ru.json'
 import sv from '../../../messages/sv.json'
 import tr from '../../../messages/tr.json'
 
-const locales = { da, de, es, fi, fr, hr, it: itMessages, nl, pl, pt, ro, ru, sv, tr }
+const locales = { ar, da, de, es, fi, fr, hr, it: itMessages, nl, pl, pt, ro, ru, sv, tr }
 
 describe('admin i18n messages', () => {
   it('keeps admin namespace keys in sync across locales', () => {

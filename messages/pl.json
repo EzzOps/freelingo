@@ -1274,7 +1274,8 @@
     "lessonsLabel": "Lekcje",
     "flashcardsLabel": "Fiszki",
     "viewDetails": "Zobacz szczegóły",
-    "supportedLanguages": "Dostępne języki"
+    "supportedLanguages": "Dostępne języki",
+    "ar": "Arabic"
   },
   "targetLanguages": {
     "en-US": "Angielski amerykański",
