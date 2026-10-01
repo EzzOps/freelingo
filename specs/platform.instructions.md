@@ -231,3 +231,10 @@ Redis supports session rotation, invitations, rate limiting, quotas, and runtime
 - `memories.instructions.md` — tutor memory.
 - `speech-services.instructions.md` and `voice-conversation.instructions.md` — speech features.
 - `api-endpoints.instructions.md` and `database-models.instructions.md` — detailed contracts.
+
+
+### Egyptian Arabic (ar)
+- Code: `ar-EG`
+- Locale: `ar`
+- Native language: `ar`
+- RTL script, no word spacing

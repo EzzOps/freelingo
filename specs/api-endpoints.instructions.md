@@ -348,3 +348,10 @@ All endpoints require `get_current_user`.
 - **GET `/{category_id}`** — Rate limit: 60/min. Auth: get_current_user. Returns a single phrasebook category by ID. Query param: `language`. Returns 404 if not found.
 - **POST `/{category_id}/native-help`** — Rate limit: 10/min. Auth: get_current_user. Query param: `language` (BCP-47, default `en-GB`). Generates or returns cached native-language study help for a phrasebook category, keyed globally by category ID, target language, and native language; the source hash determines cache freshness. Response: `{native_help: {summary, usage_tips, register_notes, phrase_notes, common_traps, mini_glossary}}`. Returns 404 if the category does not exist and 503 if generation is unavailable or already in progress.
 - **GET `/audio/{category_id}/{phrase_index}`** — Rate limit: 30/min. Auth: get_current_user. Returns cached TTS audio (audio/mpeg) for a specific phrase. Generates and caches on first request; subsequent requests serve from disk. Query param: `language`. Returns 404 if category or phrase index not found, 503 if TTS service unavailable.
+
+
+### Egyptian Arabic (ar)
+- Code: `ar-EG`
+- Locale: `ar`
+- Native language: `ar`
+- RTL script, no word spacing

@@ -1,3 +1,10 @@
+## Unreleased
+
+### Added
+- Egyptian Arabic (ar) as a native language and UI locale
+- RTL (right-to-left) text directionality support for Arabic
+- Arabic month names and voice session localization
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
