@@ -10,6 +10,7 @@ import { SUPPORTED_LOCALES } from '@/lib/locales'
 import { AuthAvatarImage } from '@/components/AuthAvatarImage'
 
 const LANGUAGES = [
+  'ar',
   'en',
   'es',
   'fr',

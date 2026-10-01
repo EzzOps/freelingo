@@ -1274,7 +1274,8 @@
     "lessonsLabel": "Lessons",
     "flashcardsLabel": "Flashcards",
     "viewDetails": "View details",
-    "supportedLanguages": "Available languages"
+    "supportedLanguages": "Available languages",
+    "ar": "Arabic"
   },
   "targetLanguages": {
     "en-US": "American English",

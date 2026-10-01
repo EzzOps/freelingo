@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Arabic (`ar`) interface and native-language option across registration, Settings, and administration, with translated UI, learning feedback, voice-session titles, month names, and emails. Arabic is not a study language.
+
 ## [1.9.25] - 2026-09-25
 
 ### Added

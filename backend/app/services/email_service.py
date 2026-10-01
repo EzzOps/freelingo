@@ -634,6 +634,15 @@ _CONTACT_I18N: dict[str, dict[str, str]] = {
         "message_label": "Mesaj",
         "footer": "FreeLingo iletişim formu aracılığıyla gönderildi",
     },
+    "ar": {
+        "greeting": "أهلاً بيك {name}،",
+        "subject": "فعّل إيميلك في FreeLingo",
+        "body": "شكراً لإنشاء حساب FreeLingo.<br />من فضلك فعّل عنوان إيميلك بالضغط على الزر أدناه. الرابط صالح لمدة <strong>24 ساعة</strong>.",
+        "button": "فعّل حسابي",
+        "link_fallback": "لو الزر مش شغال، انسخ الرابط ده والصقه في متصفحك:",
+        "footer": "لو أنت مش اللي عملت الحساب ده، تقدر تتجاهل البريد ده.",
+    },
+
     "sv": {
         "email_title": "Meddelande från kontaktformuläret",
         "subject_prefix": "[FreeLingo Kontakt]",
@@ -816,6 +825,15 @@ _FEEDBACK_I18N: dict[str, dict[str, str]] = {
         "cta": "Yönetim panelinde görüntüle",
         "footer": "FreeLingo geri bildirim panosu",
     },
+    "ar": {
+        "greeting": "أهلاً بيك {name}،",
+        "subject": "إعادة تعيين كلمة السر",
+        "body": "طلبت إعادة تعيين كلمة السر بتاعتك.<br />اضغط على الزر أدناه عشان تعيّن كلمة سر جديدة. الرابط صالح لمدة <strong>24 ساعة</strong>.",
+        "button": "إعادة تعيين كلمة السر",
+        "link_fallback": "لو الزر مش شغال، انسخ الرابط ده والصقه في متصفحك:",
+        "footer": "لو أنت مش اللي طلب ده، تقدر تتجاهل البريد ده.",
+    },
+
     "sv": {
         "email_title": "Ny feedback har skickats in",
         "logo": "FreeLingo: Ny feedback",
@@ -1003,6 +1021,17 @@ _REVIEW_I18N: dict[str, dict[str, str]] = {
         "cta": "Yönetim panelinde görüntüle",
         "footer": "FreeLingo yorum moderasyonu",
     },
+    "ar": {
+        "greeting": "أهلاً بيك {name}،",
+        "subject": "أهلاً بيك في FreeLingo",
+        "body": "بدأت تجربتك في FreeLingo! 🎉<br />اتعلم بالطريقة اللي تناسبك مع دروس متكيفة ومحادثات صوتية وبطاقات ذكية.",
+        "step1": "<strong>اعمل التقييم.</strong> دقيقة واحدة وهتعرف مستواك الصحيح.",
+        "step2": "<strong>ولّد خطة دراسة.</strong> خطة شخصية بناءً على مستواك وأهدافك.",
+        "step3": "ابدأ دروسك — وأمتع نفسك!",
+        "button": "روح للداشبورد",
+        "footer": "لو عندك أي أسئلة، ابعت لنا من داخل التطبيق.",
+    },
+
     "sv": {
         "email_title": "Nytt omdöme har skickats in",
         "subject_prefix": "[Nytt omdöme]",

@@ -44,6 +44,7 @@ interface AdminUserItem {
 }
 
 const LANGUAGES = [
+  'ar',
   'en',
   'es',
   'fr',

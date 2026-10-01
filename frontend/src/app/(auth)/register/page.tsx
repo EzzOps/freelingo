@@ -12,6 +12,7 @@ import { useConfigStore } from '@/store/config'
 import { PageLoading } from '@/components/ui/page-loading'
 
 const LANGUAGES = [
+  'ar',
   'en',
   'es',
   'fr',

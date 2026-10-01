@@ -588,6 +588,14 @@ def test_voice_session_title_turkish() -> None:
     assert " de " not in date_part
 
 
+def test_voice_session_title_arabic() -> None:
+    """Arabic uses its own label."""
+    from app.services.language_helpers import voice_session_title
+
+    title = voice_session_title("ar")
+    assert title.startswith("جلسة صوتية — ")
+
+
 def test_voice_session_title_swedish() -> None:
     from app.services.language_helpers import voice_session_title
 
