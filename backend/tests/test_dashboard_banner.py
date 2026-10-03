@@ -6,7 +6,7 @@ from app.models.dashboard_banner import DashboardBanner
 from app.schemas.dashboard_banner import DashboardBannerTranslationResponse
 from app.services.llm_adapter import LLMError
 
-LOCALES = ("en", "es", "fr", "pt", "de", "it", "ru", "nl", "pl", "ro", "tr", "sv", "da", "fi", "hr")
+LOCALES = ("en", "es", "fr", "pt", "de", "it", "ru", "nl", "pl", "ro", "tr", "sv", "da", "fi", "hr", "ar")
 
 
 def banner_translations(label: str = "Notice") -> dict[str, dict[str, str]]:
@@ -297,7 +297,7 @@ async def test_translate_banner_accepts_turkish_source(client, admin_user, monke
     generated = banner_translations("Generated")
 
     async def fake_structured_output(messages, schema):
-        assert "all fifteen requested locales" in messages[0]["content"]
+        assert "all sixteen requested locales" in messages[0]["content"]
         assert "Source locale: tr" in messages[0]["content"]
         return schema(translations=generated)
 

@@ -26,6 +26,7 @@ const BANNER_LOCALES = [
   'da',
   'fi',
   'hr',
+  'ar',
 ] as const
 
 type BannerLocale = (typeof BANNER_LOCALES)[number]
@@ -497,7 +498,7 @@ export default function AdminSystemPage() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div className="text-fl-muted-3 font-mono text-xs">
                     {revision !== null && (
-                      <span className="mr-4">
+                      <span className="me-4">
                         {t('dashboardBanner.revision', { revision })}
                       </span>
                     )}
