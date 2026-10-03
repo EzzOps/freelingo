@@ -189,7 +189,7 @@ function RegisterForm() {
               {t('title')}
             </span>
             {invite && (
-              <span className="text-fl-hint text-fl-muted-1 ml-auto font-mono tracking-widest uppercase">
+              <span className="text-fl-hint text-fl-muted-1 ms-auto font-mono tracking-widest uppercase">
                 {t('inviteActive')}
               </span>
             )}
@@ -259,12 +259,12 @@ function RegisterForm() {
                   autoCorrect="off"
                   autoCapitalize="none"
                   spellCheck={false}
-                  className="bg-fl-bg border-fl-border text-fl-fg focus:border-fl-border-2 w-full border px-4 py-3 pr-11 font-mono text-sm transition-colors focus:outline-none"
+                  className="bg-fl-bg border-fl-border text-fl-fg focus:border-fl-border-2 w-full border px-4 py-3 pe-11 font-mono text-sm transition-colors focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword((v) => !v)}
-                  className="text-fl-muted-4 hover:text-fl-muted-0 absolute inset-y-0 right-0 flex items-center px-3 transition-colors"
+                  className="text-fl-muted-4 hover:text-fl-muted-0 absolute inset-y-0 end-0 flex items-center px-3 transition-colors"
                   aria-label={
                     showPassword ? t('hidePassword') : t('showPassword')
                   }
@@ -318,12 +318,12 @@ function RegisterForm() {
                   autoCorrect="off"
                   autoCapitalize="none"
                   spellCheck={false}
-                  className="bg-fl-bg border-fl-border text-fl-fg focus:border-fl-border-2 w-full border px-4 py-3 pr-11 font-mono text-sm transition-colors focus:outline-none"
+                  className="bg-fl-bg border-fl-border text-fl-fg focus:border-fl-border-2 w-full border px-4 py-3 pe-11 font-mono text-sm transition-colors focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => setShowConfirmPassword((v) => !v)}
-                  className="text-fl-muted-4 hover:text-fl-muted-0 absolute inset-y-0 right-0 flex items-center px-3 transition-colors"
+                  className="text-fl-muted-4 hover:text-fl-muted-0 absolute inset-y-0 end-0 flex items-center px-3 transition-colors"
                   aria-label={
                     showConfirmPassword ? t('hidePassword') : t('showPassword')
                   }
@@ -428,7 +428,7 @@ function RegisterForm() {
             >
               {loading ? (
                 <>
-                  <Loader2 className="mr-2 inline h-4 w-4 animate-spin" />
+                  <Loader2 className="me-2 inline h-4 w-4 animate-spin" />
                   {t('creatingAccount')}
                 </>
               ) : (

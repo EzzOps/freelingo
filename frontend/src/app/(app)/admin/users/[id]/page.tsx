@@ -92,7 +92,7 @@ function StatRow({ label, value }: { label: string; value: React.ReactNode }) {
       <span className="text-fl-label text-fl-muted-2 font-mono tracking-widest uppercase">
         {label}
       </span>
-      <span className="text-fl-fg min-w-0 text-right font-mono text-sm break-words">
+      <span className="text-fl-fg min-w-0 text-end font-mono text-sm break-words">
         {value}
       </span>
     </div>
@@ -471,8 +471,8 @@ export default function AdminUserStatsPage() {
                 onClick={() => setActiveTab(tab.key)}
                 className={`text-fl-label flex min-h-9 shrink-0 items-center gap-2 px-3 py-2 font-mono tracking-widest uppercase transition-colors ${
                   active
-                    ? 'bg-fl-bg text-fl-fg border-fl-accent border-l-2'
-                    : 'text-fl-muted-2 hover:bg-fl-bg hover:text-fl-fg border-l-2 border-transparent'
+                    ? 'bg-fl-bg text-fl-fg border-fl-accent border-s-2'
+                    : 'text-fl-muted-2 hover:bg-fl-bg hover:text-fl-fg border-s-2 border-transparent'
                 }`}
               >
                 <Icon className="size-3.5" aria-hidden="true" />
@@ -858,11 +858,11 @@ function QuotaInput({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           aria-invalid={invalid}
-          className={`bg-fl-bg text-fl-fg focus:border-fl-accent min-w-0 flex-1 border px-3 py-2 text-right font-mono text-sm focus:outline-none ${
+          className={`bg-fl-bg text-fl-fg focus:border-fl-accent min-w-0 flex-1 border px-3 py-2 text-end font-mono text-sm focus:outline-none ${
             invalid ? 'border-fl-error/50' : 'border-fl-border'
           }`}
         />
-        <span className="border-fl-border bg-fl-surface-2 text-fl-muted-2 border border-l-0 px-3 py-2 font-mono text-xs">
+        <span className="border-fl-border bg-fl-surface-2 text-fl-muted-2 border border-s-0 px-3 py-2 font-mono text-xs">
           {unit}
         </span>
       </span>

@@ -242,7 +242,7 @@ export default function VocabularySetPage({
                             key={i}
                             className="text-fl-muted-1 max-w-[70ch] text-sm leading-relaxed"
                           >
-                            <span className="text-fl-muted-3 mr-2">·</span>
+                            <span className="text-fl-muted-3 me-2">·</span>
                             {tip}
                           </li>
                         ))}
@@ -329,7 +329,7 @@ export default function VocabularySetPage({
                             key={i}
                             className="text-fl-muted-1 max-w-[70ch] text-sm leading-relaxed"
                           >
-                            <span className="text-fl-muted-3 mr-2">·</span>
+                            <span className="text-fl-muted-3 me-2">·</span>
                             {prompt}
                           </li>
                         ))}
@@ -377,7 +377,7 @@ export default function VocabularySetPage({
                 </span>
               )}
               {word.frequency_rank && (
-                <span className="text-fl-label text-fl-muted-4 ml-auto font-mono">
+                <span className="text-fl-label text-fl-muted-4 ms-auto font-mono">
                   #{word.frequency_rank}
                 </span>
               )}

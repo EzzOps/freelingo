@@ -25,11 +25,15 @@ export function TargetLanguageText({
     <Component
       className={cn(getTargetLanguageTextClass(code), className)}
       lang={code || undefined}
+      dir={code ? 'ltr' : undefined}
       {...props}
     >
       {children}
       {(reading || translation) && (
-        <span className="mt-1 block font-sans text-sm leading-relaxed tracking-normal normal-case">
+        <span
+          dir="auto"
+          className="mt-1 block font-sans text-sm leading-relaxed tracking-normal normal-case"
+        >
           {[reading, translation].filter(Boolean).join(' · ')}
         </span>
       )}

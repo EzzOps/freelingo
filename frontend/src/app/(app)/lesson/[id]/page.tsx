@@ -600,7 +600,7 @@ export default function LessonPage() {
                 onClick={() =>
                   isReview ? router.push('/plan') : setShowExitConfirm(true)
                 }
-                className="text-fl-muted-3 hover:text-fl-fg ml-1 font-mono text-lg leading-none transition-colors"
+                className="text-fl-muted-3 hover:text-fl-fg ms-1 font-mono text-lg leading-none transition-colors"
                 aria-label={t('exit')}
               >
                 ✕
@@ -632,7 +632,7 @@ export default function LessonPage() {
                   <ul className="border-fl-border space-y-1 border-t pt-3">
                     {(explanation.key_points as string[]).map((kp, i) => (
                       <li key={i} className="text-fl-muted-1">
-                        <span className="text-fl-muted-2 mr-2">·</span>
+                        <span className="text-fl-muted-2 me-2">·</span>
                         <TargetLanguageText languageCode={targetLanguageCode}>
                           {kp}
                         </TargetLanguageText>
@@ -705,7 +705,7 @@ export default function LessonPage() {
                                 key={i}
                                 className="text-fl-muted-1 text-base leading-relaxed"
                               >
-                                <span className="text-fl-muted-2 mr-2">·</span>
+                                <span className="text-fl-muted-2 me-2">·</span>
                                 {kp}
                               </li>
                             )
@@ -943,7 +943,7 @@ export default function LessonPage() {
                         key={opt}
                         disabled={isEvaluated || isReview}
                         onClick={() => setAnswer(opt)}
-                        className={`flex w-full items-center justify-between gap-3 border px-4 py-3 text-left transition-colors disabled:opacity-100 ${
+                        className={`flex w-full items-center justify-between gap-3 border px-4 py-3 text-start transition-colors disabled:opacity-100 ${
                           isCorrect
                             ? 'text-fl-fg border-fl-success/50 bg-fl-success/5'
                             : isWrongSelection
@@ -1020,9 +1020,10 @@ export default function LessonPage() {
                 <div className="relative">
                   {showAnnotatedAnswer && answerSegments ? (
                     <div
+                      dir="ltr"
                       className={cn(
                         getTargetLanguageTextClass(targetLanguageCode),
-                        'bg-fl-bg text-fl-fg min-h-[90px] w-full border px-4 py-3 pr-10 whitespace-pre-wrap',
+                        'bg-fl-bg text-fl-fg min-h-[90px] w-full border px-4 py-3 pe-10 whitespace-pre-wrap',
                         isAnswerCorrect
                           ? 'border-fl-success/50'
                           : isPartiallyCorrect
@@ -1047,10 +1048,11 @@ export default function LessonPage() {
                     </div>
                   ) : (
                     <textarea
+                      dir="ltr"
                       className={cn(
                         getTargetLanguageTextClass(targetLanguageCode),
                         'bg-fl-bg border-fl-border text-fl-fg placeholder:text-fl-muted-4 focus:border-fl-border-2 min-h-[90px] w-full resize-y border px-4 py-3 transition-colors focus:outline-none disabled:opacity-100',
-                        isEvaluated && 'pr-10',
+                        isEvaluated && 'pe-10',
                         isEvaluated &&
                           (isAnswerCorrect
                             ? 'border-fl-success/50'
@@ -1074,7 +1076,7 @@ export default function LessonPage() {
                             ? t('corrections')
                             : t('incorrect')
                       }
-                      className={`absolute top-3 right-3 ${
+                      className={`absolute top-3 end-3 ${
                         isAnswerCorrect
                           ? 'text-fl-success'
                           : isPartiallyCorrect
@@ -1136,6 +1138,7 @@ export default function LessonPage() {
                         {exerciseCorrections.map((correction, index) => (
                           <li key={index}>
                             <p
+                              dir="ltr"
                               className={getTargetLanguageTextClass(
                                 targetLanguageCode
                               )}

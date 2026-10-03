@@ -131,7 +131,7 @@ function CategoryCard({
                             key={i}
                             className="text-fl-muted-1 max-w-[70ch] text-sm leading-relaxed"
                           >
-                            <span className="text-fl-muted-3 mr-2">·</span>
+                            <span className="text-fl-muted-3 me-2">·</span>
                             {tip}
                           </li>
                         ))}

@@ -393,7 +393,7 @@ export default function AdminFeedbackPage() {
             <button
               type="button"
               onClick={handleSearch}
-              className="bg-fl-bg border-fl-border text-fl-muted-3 hover:text-fl-fg hover:border-fl-border-2 -ml-px inline-flex w-10 shrink-0 items-center justify-center border transition-colors"
+              className="bg-fl-bg border-fl-border text-fl-muted-3 hover:text-fl-fg hover:border-fl-border-2 -ms-px inline-flex w-10 shrink-0 items-center justify-center border transition-colors"
               aria-label={tAdmin('feedbackSearchAction')}
             >
               <Search className="size-3.5" aria-hidden="true" />
@@ -460,19 +460,19 @@ export default function AdminFeedbackPage() {
               <table className="w-full table-fixed border-collapse">
                 <thead>
                   <tr className="border-fl-border border-b">
-                    <th className="text-fl-label text-fl-muted-4 w-[42%] px-5 py-3 text-left font-mono tracking-widest uppercase">
+                    <th className="text-fl-label text-fl-muted-4 w-[42%] px-5 py-3 text-start font-mono tracking-widest uppercase">
                       {tAdmin('feedbackItem')}
                     </th>
-                    <th className="text-fl-label text-fl-muted-4 w-[13%] px-5 py-3 text-left font-mono tracking-widest uppercase">
+                    <th className="text-fl-label text-fl-muted-4 w-[13%] px-5 py-3 text-start font-mono tracking-widest uppercase">
                       {tAdmin('type')}
                     </th>
-                    <th className="text-fl-label text-fl-muted-4 w-[18%] px-5 py-3 text-left font-mono tracking-widest uppercase">
+                    <th className="text-fl-label text-fl-muted-4 w-[18%] px-5 py-3 text-start font-mono tracking-widest uppercase">
                       {tAdmin('status')}
                     </th>
-                    <th className="text-fl-label text-fl-muted-4 w-[13%] px-5 py-3 text-left font-mono tracking-widest uppercase">
+                    <th className="text-fl-label text-fl-muted-4 w-[13%] px-5 py-3 text-start font-mono tracking-widest uppercase">
                       {tAdmin('signals')}
                     </th>
-                    <th className="text-fl-label text-fl-muted-4 w-[14%] px-5 py-3 text-right font-mono tracking-widest uppercase">
+                    <th className="text-fl-label text-fl-muted-4 w-[14%] px-5 py-3 text-end font-mono tracking-widest uppercase">
                       {tAdmin('actions')}
                     </th>
                   </tr>
@@ -539,7 +539,7 @@ export default function AdminFeedbackPage() {
                           <p>◌ {entry.comment_count}</p>
                         </div>
                       </td>
-                      <td className="px-5 py-4 text-right align-top">
+                      <td className="px-5 py-4 text-end align-top">
                         <button
                           onClick={() => setDeletePending(entry)}
                           disabled={deletingId === entry.id}

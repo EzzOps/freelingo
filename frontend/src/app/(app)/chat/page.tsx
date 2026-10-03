@@ -331,7 +331,7 @@ export default function ChatPage() {
 
         {/* Sidebar */}
         {sidebarOpen && (
-          <aside className="border-fl-border bg-fl-bg fixed top-14 bottom-0 left-0 z-20 flex w-56 shrink-0 flex-col overflow-hidden border-r md:relative md:top-auto md:bottom-auto md:left-auto md:z-auto">
+          <aside className="border-fl-border bg-fl-bg fixed top-14 bottom-0 start-0 z-20 flex w-56 shrink-0 flex-col overflow-hidden border-r md:relative md:top-auto md:bottom-auto md:start-auto md:z-auto">
             <div className="border-fl-border flex items-center justify-between border-b px-4 py-3">
               <span className="text-fl-hint text-fl-muted-2 font-mono tracking-widest uppercase">
                 {t('conversations')}
@@ -382,16 +382,16 @@ export default function ChatPage() {
                     onClick={() => selectConversation(c.id)}
                     className={`group border-fl-surface-2 flex cursor-pointer items-center justify-between border-b px-4 py-3 transition-colors ${
                       activeId === c.id
-                        ? 'bg-fl-surface-2 border-l-fl-fg border-l-2'
-                        : 'hover:bg-fl-surface border-l-2 border-l-transparent'
+                        ? 'bg-fl-surface-2 border-s-fl-fg border-s-2'
+                        : 'hover:bg-fl-surface border-s-2 border-s-transparent'
                     }`}
                   >
                     <span
-                      className={`text-fl-label truncate pr-1 font-mono leading-tight ${activeId === c.id ? 'text-fl-fg' : 'text-fl-muted-1'}`}
+                      className={`text-fl-label truncate pe-1 font-mono leading-tight ${activeId === c.id ? 'text-fl-fg' : 'text-fl-muted-1'}`}
                     >
                       {c.source === 'voice' && (
                         <span
-                          className="text-fl-muted-3 mr-1.5"
+                          className="text-fl-muted-3 me-1.5"
                           title={t('voiceSession')}
                         >
                           🎤
@@ -423,7 +423,7 @@ export default function ChatPage() {
           <div className="border-fl-border bg-fl-bg flex shrink-0 items-center gap-2 border-b px-5 py-4">
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="text-fl-label text-fl-muted-2 hover:text-fl-fg mr-1 text-lg transition-colors"
+              className="text-fl-label text-fl-muted-2 hover:text-fl-fg me-1 text-lg transition-colors"
               title={
                 sidebarOpen ? t('toggleSidebarHide') : t('toggleSidebarShow')
               }
@@ -438,7 +438,7 @@ export default function ChatPage() {
                 : t('newConversation')}
             </span>
             {sending ? (
-              <div className="ml-auto flex flex-col items-end gap-0.5">
+              <div className="ms-auto flex flex-col items-end gap-0.5">
                 <span className="text-fl-hint text-fl-muted-3 animate-pulse font-mono tracking-widest uppercase">
                   {t('thinking')}
                 </span>
@@ -451,7 +451,7 @@ export default function ChatPage() {
             ) : messages.length > 0 ? (
               <button
                 onClick={continueInVoice}
-                className="text-fl-hint text-fl-muted-2 hover:text-fl-fg ml-auto font-mono tracking-widest uppercase transition-colors"
+                className="text-fl-hint text-fl-muted-2 hover:text-fl-fg ms-auto font-mono tracking-widest uppercase transition-colors"
               >
                 {t('continueInVoice')}
               </button>
@@ -483,7 +483,7 @@ export default function ChatPage() {
               messages.map((msg, i) => (
                 <div
                   key={i}
-                  className={`flex items-end gap-2 ${msg.role === 'user' ? 'ml-auto max-w-[75%] flex-row-reverse' : 'flex-row'}`}
+                  className={`flex items-end gap-2 ${msg.role === 'user' ? 'ms-auto max-w-[75%] flex-row-reverse' : 'flex-row'}`}
                 >
                   {/* Avatar */}
                   <div className="border-fl-border mb-0.5 h-7 w-7 flex-shrink-0 overflow-hidden rounded-full border">
@@ -522,11 +522,11 @@ export default function ChatPage() {
                       </div>
                     )}
                   </div>
-                  <div className={`max-w-[75%] min-w-[10rem] text-left`}>
+                  <div className={`max-w-[75%] min-w-[10rem] text-start`}>
                     <TargetLanguageText
                       as="div"
                       languageCode={targetLanguageCode}
-                      className={`word-selectable max-w-[70ch] border px-4 py-3 text-left ${
+                      className={`word-selectable max-w-[70ch] border px-4 py-3 text-start ${
                         msg.role === 'user'
                           ? 'bg-fl-accent text-fl-accent-fg border-fl-accent'
                           : 'bg-fl-surface text-fl-fg-2 border-fl-border'

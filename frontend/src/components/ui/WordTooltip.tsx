@@ -77,7 +77,7 @@ export function WordTooltip({
         )}
         <button
           onClick={onDismiss}
-          className="text-fl-muted-3 hover:text-fl-fg ml-1 transition-colors"
+          className="text-fl-muted-3 hover:text-fl-fg ms-1 transition-colors"
           aria-label={tCommon('close')}
         >
           ✕

@@ -99,7 +99,7 @@ export default function TermsPage() {
           <p className="text-fl-fg-2 font-mono text-sm leading-relaxed">
             {t('s2Intro')}
           </p>
-          <ul className="space-y-1 pl-4">
+          <ul className="space-y-1 ps-4">
             {s2Items.map((item) => (
               <li
                 key={item}

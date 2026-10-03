@@ -138,9 +138,9 @@ export default function FAQPage() {
           >
             <button
               onClick={() => setOpen(open === i ? null : i)}
-              className="hover:bg-fl-surface flex w-full items-center justify-between px-5 py-4 text-left transition-colors"
+              className="hover:bg-fl-surface flex w-full items-center justify-between px-5 py-4 text-start transition-colors"
             >
-              <span className="text-fl-fg pr-4 font-mono text-xs tracking-wide">
+              <span className="text-fl-fg pe-4 font-mono text-xs tracking-wide">
                 {item.q}
               </span>
               <span className="text-fl-muted-2 shrink-0 font-mono text-sm">

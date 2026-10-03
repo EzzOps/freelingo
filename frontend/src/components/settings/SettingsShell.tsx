@@ -50,7 +50,7 @@ export function SettingsNav({
           <a
             key={item.href}
             href={item.href}
-            className="text-fl-muted-2 hover:bg-fl-bg hover:text-fl-fg focus:bg-fl-bg focus:text-fl-fg flex min-h-9 items-center gap-2 border-l-2 border-transparent px-3 py-2 font-mono text-xs tracking-widest uppercase transition-colors focus:outline-none"
+            className="text-fl-muted-2 hover:bg-fl-bg hover:text-fl-fg focus:bg-fl-bg focus:text-fl-fg flex min-h-9 items-center gap-2 border-s-2 border-transparent px-3 py-2 font-mono text-xs tracking-widest uppercase transition-colors focus:outline-none"
           >
             <Icon className="size-3.5" aria-hidden="true" />
             {item.label}

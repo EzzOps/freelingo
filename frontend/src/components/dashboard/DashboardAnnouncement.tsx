@@ -51,7 +51,7 @@ export function DashboardAnnouncement() {
   return (
     <section
       aria-labelledby="dashboard-announcement-title"
-      className="border-fl-accent/50 bg-fl-accent/5 relative mb-6 border p-5 pr-14"
+      className="border-fl-accent/50 bg-fl-accent/5 relative mb-6 border p-5 pe-14"
     >
       <div className="flex gap-3">
         <Megaphone
@@ -83,7 +83,7 @@ export function DashboardAnnouncement() {
         onClick={dismiss}
         disabled={pending}
         aria-label={t('announcementDismiss')}
-        className="text-fl-muted-2 hover:text-fl-fg absolute top-3 right-3 inline-flex size-9 items-center justify-center transition-colors disabled:cursor-wait disabled:opacity-40"
+        className="text-fl-muted-2 hover:text-fl-fg absolute top-3 end-3 inline-flex size-9 items-center justify-center transition-colors disabled:cursor-wait disabled:opacity-40"
       >
         <X className="size-5" aria-hidden="true" />
       </button>

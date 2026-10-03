@@ -396,7 +396,7 @@ function DetailView({
             {(currentUserId === entry.author.id || isAdmin) && (
               <button
                 onClick={() => setDeleteEntryPending(true)}
-                className="text-fl-hint border-fl-error/30 text-fl-error-fg hover:border-fl-error ml-auto border px-3 py-1 font-mono tracking-widest uppercase transition-colors"
+                className="text-fl-hint border-fl-error/30 text-fl-error-fg hover:border-fl-error ms-auto border px-3 py-1 font-mono tracking-widest uppercase transition-colors"
               >
                 {t('deleteEntry')}
               </button>
@@ -696,7 +696,7 @@ export default function FeedbackPage() {
           </button>
         ))}
 
-        <span className="text-fl-hint text-fl-muted-4 ml-2 font-mono tracking-widest uppercase">
+        <span className="text-fl-hint text-fl-muted-4 ms-2 font-mono tracking-widest uppercase">
           {t('filterStatus')}
         </span>
         <select
@@ -828,7 +828,7 @@ export default function FeedbackPage() {
                             e.stopPropagation()
                             setDeletePending(entry)
                           }}
-                          className="text-fl-hint text-fl-muted-4 hover:text-fl-error-fg ml-auto font-mono tracking-widest uppercase transition-colors"
+                          className="text-fl-hint text-fl-muted-4 hover:text-fl-error-fg ms-auto font-mono tracking-widest uppercase transition-colors"
                         >
                           {t('deleteEntry')}
                         </button>

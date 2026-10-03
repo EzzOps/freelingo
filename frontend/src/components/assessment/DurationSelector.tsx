@@ -79,7 +79,7 @@ export default function DurationSelector({
                 <button
                   key={opt.weeks}
                   onClick={() => onSelectDuration(opt)}
-                  className={`border px-4 py-3 text-left transition-colors ${
+                  className={`border px-4 py-3 text-start transition-colors ${
                     selectedWeeks === opt.weeks
                       ? 'bg-fl-fg text-fl-bg border-fl-fg'
                       : 'border-fl-border text-fl-muted-2 hover:border-fl-border-2 hover:text-fl-fg'

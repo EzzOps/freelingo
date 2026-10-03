@@ -80,9 +80,9 @@ export function LandingFAQ() {
         >
           <button
             onClick={() => setOpen(open === i ? null : i)}
-            className="hover:bg-fl-surface flex w-full items-center justify-between px-5 py-4 text-left transition-colors"
+            className="hover:bg-fl-surface flex w-full items-center justify-between px-5 py-4 text-start transition-colors"
           >
-            <span className="text-fl-fg pr-4 font-sans text-sm">{t(key)}</span>
+            <span className="text-fl-fg pe-4 font-sans text-sm">{t(key)}</span>
             <span className="text-fl-muted-2 shrink-0 font-mono text-sm">
               {open === i ? '−' : '+'}
             </span>

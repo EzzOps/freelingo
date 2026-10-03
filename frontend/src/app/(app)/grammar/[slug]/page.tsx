@@ -25,7 +25,7 @@ function renderExplanation(text: string) {
           key={i}
           className="text-fl-muted-1 font-sans text-base leading-relaxed"
         >
-          <span className="text-fl-muted-3 mr-2">{'\u00b7'}</span>
+          <span className="text-fl-muted-3 me-2">{'\u00b7'}</span>
           <RichText text={line.slice(2)} />
         </li>
       )
@@ -309,7 +309,7 @@ export default function GrammarDetailPage({
                             key={i}
                             className="text-fl-muted-1 max-w-[70ch] text-sm leading-relaxed"
                           >
-                            <span className="text-fl-muted-3 mr-2">·</span>
+                            <span className="text-fl-muted-3 me-2">·</span>
                             {point}
                           </li>
                         ))}
@@ -435,7 +435,7 @@ export default function GrammarDetailPage({
             {topic.examples.map((ex, i) => (
               <div
                 key={i}
-                className="border-fl-border space-y-0.5 border-l-2 pl-4"
+                className="border-fl-border space-y-0.5 border-s-2 ps-4"
               >
                 <p className="text-fl-fg font-sans text-base leading-relaxed">
                   {ex.text}
@@ -482,7 +482,7 @@ export default function GrammarDetailPage({
                   </div>
                 )}
                 {m.note && (
-                  <p className="text-fl-muted-1 max-w-[70ch] pl-5 font-sans text-sm leading-relaxed">
+                  <p className="text-fl-muted-1 max-w-[70ch] ps-5 font-sans text-sm leading-relaxed">
                     {m.note}
                   </p>
                 )}
@@ -509,7 +509,7 @@ export default function GrammarDetailPage({
                     className="border-fl-border text-fl-label text-fl-muted-2 hover:border-fl-border-2 hover:text-fl-fg border px-3 py-2 font-mono tracking-widest uppercase transition-colors"
                   >
                     {'\u25cf'} {rt.title}
-                    <span className="text-fl-muted-4 ml-2">{rt.level}</span>
+                    <span className="text-fl-muted-4 ms-2">{rt.level}</span>
                   </Link>
                 )
             )}

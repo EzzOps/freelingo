@@ -32,7 +32,7 @@ export function CookieBanner() {
   if (!visible) return null
 
   return (
-    <div className="border-fl-border bg-fl-surface fixed right-0 bottom-0 left-0 z-50 border-t">
+    <div className="border-fl-border bg-fl-surface fixed end-0 bottom-0 start-0 z-50 border-t">
       <div className="mx-auto flex max-w-5xl flex-col items-start gap-4 px-6 py-4 sm:flex-row sm:items-center">
         <p className="text-fl-fg-2 flex-1 font-mono text-xs leading-relaxed">
           {t('message')}{' '}

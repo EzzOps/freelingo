@@ -202,7 +202,7 @@ export default async function Home() {
                 What did you do yesterday?
               </p>
             </div>
-            <div className="border-fl-border border-l-2 pl-4">
+            <div className="border-fl-border border-s-2 ps-4">
               <p className="text-fl-caption text-fl-muted-1 mb-2 font-mono">
                 {t('microDemo.answerLabel')}
               </p>
@@ -213,7 +213,7 @@ export default async function Home() {
                 Yesterday I go to the park.
               </p>
             </div>
-            <div className="border-fl-accent/40 border-l-2 pl-4">
+            <div className="border-fl-accent/40 border-s-2 ps-4">
               <p className="text-fl-caption text-fl-muted-1 mb-2 font-mono">
                 {t('microDemo.correctionLabel')}
               </p>
@@ -329,7 +329,7 @@ export default async function Home() {
                 height={20}
                 className="hidden opacity-80 dark:block"
               />
-              <div className="text-left">
+              <div className="text-start">
                 <p className="text-fl-fg font-sans text-sm font-semibold tracking-tight">
                   {tBilling('openSourceTitle')}
                 </p>

@@ -109,6 +109,7 @@ export default async function RootLayout({
     <html
       suppressHydrationWarning
       lang={locale}
+      dir={locale === 'ar' ? 'rtl' : 'ltr'}
       className={`${geistSans.variable} ${geistMono.variable} ${notoSansJP.variable} ${notoSansKR.variable} ${notoSansSC.variable} h-full antialiased`}
     >
       <head>

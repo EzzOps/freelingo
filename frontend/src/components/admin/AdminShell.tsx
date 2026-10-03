@@ -53,7 +53,7 @@ export function AdminPanel({
               </span>
             </>
           )}
-          {meta && <div className="ml-auto">{meta}</div>}
+          {meta && <div className="ms-auto">{meta}</div>}
         </div>
       )}
       {children}

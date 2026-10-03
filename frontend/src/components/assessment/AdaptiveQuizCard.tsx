@@ -76,7 +76,7 @@ export default function AdaptiveQuizCard({
                 <button
                   key={option}
                   onClick={() => onAnswer(option)}
-                  className="border-fl-border text-fl-muted-1 hover:border-fl-border-2 hover:text-fl-fg hover:bg-fl-surface-2 flex w-full items-start gap-3 border px-4 py-3 text-left transition-colors"
+                  className="border-fl-border text-fl-muted-1 hover:border-fl-border-2 hover:text-fl-fg hover:bg-fl-surface-2 flex w-full items-start gap-3 border px-4 py-3 text-start transition-colors"
                 >
                   <span className="text-fl-label text-fl-muted-3 shrink-0 font-mono">
                     {labels[i]}.

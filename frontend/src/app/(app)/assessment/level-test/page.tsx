@@ -354,7 +354,7 @@ export default function LevelTestPage() {
                       />
                     </div>
                     <span
-                      className={`text-fl-label w-16 text-right font-mono ${isWeak ? 'text-amber-500' : 'text-fl-fg'}`}
+                      className={`text-fl-label w-16 text-end font-mono ${isWeak ? 'text-amber-500' : 'text-fl-fg'}`}
                     >
                       {v.correct}/{v.total} ({skillPct}%)
                       {isWeak && ' ◂'}
@@ -450,7 +450,7 @@ export default function LevelTestPage() {
           <div className="space-y-2">
             {q.options.map((option, i) => {
               let style =
-                'w-full text-left border font-mono text-xs tracking-wide py-3.5 px-4 transition-colors cursor-pointer'
+                'w-full text-start border font-mono text-xs tracking-wide py-3.5 px-4 transition-colors cursor-pointer'
 
               if (!answerConfirmed) {
                 style +=
@@ -477,7 +477,7 @@ export default function LevelTestPage() {
                   disabled={answerConfirmed}
                   className={style}
                 >
-                  <span className="text-fl-muted-3 mr-3">{prefix}.</span>
+                  <span className="text-fl-muted-3 me-3">{prefix}.</span>
                   {option}
                 </button>
               )

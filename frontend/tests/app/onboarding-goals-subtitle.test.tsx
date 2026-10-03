@@ -41,6 +41,7 @@ const catalogs = { ar, da, de, en, es, fi, fr, hr, it: itMessages, nl, pl, pt, r
 type Locale = keyof typeof catalogs
 
 const spanishSubtitles: Record<Locale, string> = {
+  ar: "اللغة: إسباني. عايز تستخدمها في إيه؟ اختار كل اللي ينطبق.",
   da: 'Sprog: Spansk. Hvad vil du bruge det til? Vælg alle relevante mål.',
   de: 'Sprache: Spanisch. Wofür möchtest du sie nutzen? Wähle alle zutreffenden Ziele aus.',
   en: 'Language: Spanish. What do you want to use it for? Select all that apply.',

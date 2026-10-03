@@ -46,7 +46,7 @@ export function LoadingBar() {
 
   return (
     <div
-      className="fixed top-0 right-0 left-0 z-[300] h-px overflow-hidden"
+      className="fixed top-0 end-0 start-0 z-[300] h-px overflow-hidden"
       role="progressbar"
       aria-label={tCommon('loading')}
     >

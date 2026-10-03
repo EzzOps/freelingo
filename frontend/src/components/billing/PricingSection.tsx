@@ -290,7 +290,7 @@ export default function PricingSection({
         <table className="w-full table-fixed">
           <thead>
             <tr className="border-fl-border bg-fl-surface border-b">
-              <th className="text-fl-label text-fl-muted-2 w-[42%] px-3 py-3 text-left font-mono tracking-widest uppercase sm:w-auto sm:px-5">
+              <th className="text-fl-label text-fl-muted-2 w-[42%] px-3 py-3 text-start font-mono tracking-widest uppercase sm:w-auto sm:px-5">
                 &nbsp;
               </th>
               <th className="text-fl-muted-2 w-[19.333%] px-1 py-3 text-center font-mono text-xs tracking-normal wrap-anywhere uppercase sm:w-auto sm:px-4 sm:tracking-widest">

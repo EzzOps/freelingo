@@ -94,7 +94,7 @@ export default function TranscriptBubble({
         >
           {text}
           {streaming && (
-            <span className="ml-1 inline-block h-3 w-1 animate-pulse bg-current align-middle motion-reduce:animate-none" />
+            <span className="ms-1 inline-block h-3 w-1 animate-pulse bg-current align-middle motion-reduce:animate-none" />
           )}
         </TargetLanguageText>
       </div>

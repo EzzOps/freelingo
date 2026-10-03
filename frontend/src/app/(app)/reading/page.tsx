@@ -341,7 +341,7 @@ function ReadingPage() {
                       {item.exercise.level} · {item.exercise.exercise_type}
                     </p>
                   </div>
-                  <div className="shrink-0 text-right">
+                  <div className="shrink-0 text-end">
                     <p className="text-fl-fg font-mono text-xs font-bold">
                       {item.score}/{item.exercise.questions.length}
                     </p>
@@ -402,7 +402,7 @@ function ReadingPage() {
                 {result.score}/{exercise.questions.length}
               </p>
             </div>
-            <div className="text-right">
+            <div className="text-end">
               <p className="text-fl-label text-fl-muted-3 font-mono tracking-widest uppercase">
                 XP
               </p>
@@ -632,7 +632,7 @@ function ReadingPage() {
                                 [String(q.index)]: k,
                               }))
                             }
-                            className={`w-full border px-3 py-2 text-left transition-colors ${
+                            className={`w-full border px-3 py-2 text-start transition-colors ${
                               selected
                                 ? 'border-fl-accent text-fl-fg bg-fl-surface-2'
                                 : 'border-fl-border text-fl-muted-1 hover:border-fl-muted-2 hover:text-fl-fg'

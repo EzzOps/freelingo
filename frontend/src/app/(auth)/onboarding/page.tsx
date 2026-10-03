@@ -285,7 +285,7 @@ export default function OnboardingPage() {
                       key={goal}
                       type="button"
                       onClick={() => toggleGoal(goal)}
-                      className={`text-fl-label border px-3 py-3 text-left font-mono tracking-widest uppercase transition-colors ${
+                      className={`text-fl-label border px-3 py-3 text-start font-mono tracking-widest uppercase transition-colors ${
                         active
                           ? 'border-fl-accent bg-fl-accent text-fl-accent-fg'
                           : 'border-fl-border text-fl-muted-2 hover:border-fl-border-2 hover:text-fl-fg'
@@ -304,7 +304,7 @@ export default function OnboardingPage() {
               >
                 {loading ? (
                   <>
-                    <Loader2 className="mr-2 inline h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 inline h-4 w-4 animate-spin" />
                     {tCommon('saving')}
                   </>
                 ) : (
@@ -331,7 +331,7 @@ export default function OnboardingPage() {
               <p className="text-fl-muted-1 font-mono text-xs leading-relaxed">
                 {t('freemiumTrialDesc')}
               </p>
-              <ul className="text-fl-muted-2 space-y-1.5 text-left font-mono text-xs">
+              <ul className="text-fl-muted-2 space-y-1.5 text-start font-mono text-xs">
                 <li className="flex items-start gap-2">
                   <span className="text-fl-accent shrink-0">✓</span>
                   {t('freemiumChatLabel')}

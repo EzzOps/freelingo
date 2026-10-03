@@ -141,7 +141,7 @@ function UnitCompetencyBlock({
                 {text}
               </span>
               {status === 'in-progress' && record && (
-                <span className="text-fl-label text-fl-muted-3 ml-auto shrink-0 font-mono">
+                <span className="text-fl-label text-fl-muted-3 ms-auto shrink-0 font-mono">
                   {Math.round(score * 100)}%
                 </span>
               )}
@@ -250,7 +250,7 @@ export default function ProgressPage() {
             {t('subtitle')}
           </span>
           {activeLanguage && cefrLevel && (
-            <span className="border-fl-border text-fl-label text-fl-muted-3 ml-auto border px-2 py-0.5 font-mono tracking-widest uppercase">
+            <span className="border-fl-border text-fl-label text-fl-muted-3 ms-auto border px-2 py-0.5 font-mono tracking-widest uppercase">
               {activeLanguage.name} · {cefrLevel}
             </span>
           )}
@@ -384,7 +384,7 @@ export default function ProgressPage() {
                         style={{ width: `${pct}%` }}
                       />
                     </div>
-                    <span className="text-fl-label text-fl-muted-3 w-12 text-right font-mono">
+                    <span className="text-fl-label text-fl-muted-3 w-12 text-end font-mono">
                       {mastered}/{s.words.length}
                     </span>
                   </div>
@@ -416,7 +416,7 @@ export default function ProgressPage() {
                     style={{ width: `${Math.round(value * 100)}%` }}
                   />
                 </div>
-                <span className="text-fl-label text-fl-muted-2 w-10 text-right font-mono">
+                <span className="text-fl-label text-fl-muted-2 w-10 text-end font-mono">
                   {Math.round(value * 100)}%
                 </span>
               </div>

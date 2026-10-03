@@ -37,21 +37,21 @@ export default function BeginnerGate({
           <div className="flex flex-col gap-3">
             <button
               onClick={onBeginner}
-              className="border-fl-border text-fl-muted-2 hover:border-fl-border-2 hover:text-fl-fg w-full border px-5 py-4 text-left font-mono text-sm tracking-widest uppercase transition-colors"
+              className="border-fl-border text-fl-muted-2 hover:border-fl-border-2 hover:text-fl-fg w-full border px-5 py-4 text-start font-mono text-sm tracking-widest uppercase transition-colors"
             >
-              <span className="text-fl-muted-3 mr-3">○</span>
+              <span className="text-fl-muted-3 me-3">○</span>
               {t('beginnerOption')}
-              <span className="text-fl-hint text-fl-muted-3 mt-1 ml-6 block normal-case">
+              <span className="text-fl-hint text-fl-muted-3 mt-1 ms-6 block normal-case">
                 {t('beginnerOptionHint')}
               </span>
             </button>
             <button
               onClick={onHasExperience}
-              className="bg-fl-fg text-fl-bg hover:bg-fl-fg-bright w-full px-5 py-4 text-left font-mono text-sm font-bold tracking-widest uppercase transition-colors"
+              className="bg-fl-fg text-fl-bg hover:bg-fl-fg-bright w-full px-5 py-4 text-start font-mono text-sm font-bold tracking-widest uppercase transition-colors"
             >
-              <span className="mr-3">●</span>
+              <span className="me-3">●</span>
               {t('hasExperienceOption')}
-              <span className="text-fl-hint mt-1 ml-6 block font-normal normal-case opacity-70">
+              <span className="text-fl-hint mt-1 ms-6 block font-normal normal-case opacity-70">
                 {t('hasExperienceOptionHint')}
               </span>
             </button>

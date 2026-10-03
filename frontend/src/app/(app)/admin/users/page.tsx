@@ -537,7 +537,7 @@ export default function AdminUsersPage() {
               aria-hidden="true"
             />
           )}
-          <span className="text-fl-hint text-fl-muted-4 ml-auto font-mono tracking-widest uppercase">
+          <span className="text-fl-hint text-fl-muted-4 ms-auto font-mono tracking-widest uppercase">
             {total} {t('total')}
           </span>
         </div>
@@ -566,7 +566,7 @@ export default function AdminUsersPage() {
             <button
               type="button"
               onClick={handleSearch}
-              className="bg-fl-bg border-fl-border text-fl-muted-3 hover:text-fl-fg hover:border-fl-border-2 -ml-px inline-flex w-10 shrink-0 items-center justify-center border transition-colors"
+              className="bg-fl-bg border-fl-border text-fl-muted-3 hover:text-fl-fg hover:border-fl-border-2 -ms-px inline-flex w-10 shrink-0 items-center justify-center border transition-colors"
               aria-label={t('searchAction')}
             >
               <Search className="size-3.5" aria-hidden="true" />
@@ -635,31 +635,31 @@ export default function AdminUsersPage() {
                 <thead>
                   <tr className="border-fl-border border-b">
                     <th
-                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-left font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[25%]' : 'w-[30%]'}`}
+                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-start font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[25%]' : 'w-[30%]'}`}
                     >
                       {t('userColumn')}
                     </th>
                     <th
-                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-left font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[25%]' : 'w-[30%]'}`}
+                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-start font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[25%]' : 'w-[30%]'}`}
                     >
                       {t('fieldEmail')}
                     </th>
                     <th
-                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-left font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[12.5%]' : 'w-[15%]'}`}
+                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-start font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[12.5%]' : 'w-[15%]'}`}
                     >
                       {t('role')}
                     </th>
                     <th
-                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-left font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[12.5%]' : 'w-[15%]'}`}
+                      className={`text-fl-label text-fl-muted-4 px-5 py-3 text-start font-mono tracking-widest uppercase ${stripeEnabled ? 'w-[12.5%]' : 'w-[15%]'}`}
                     >
                       {t('status')}
                     </th>
                     {stripeEnabled && (
-                      <th className="text-fl-label text-fl-muted-4 w-[15%] px-5 py-3 text-left font-mono tracking-widest uppercase">
+                      <th className="text-fl-label text-fl-muted-4 w-[15%] px-5 py-3 text-start font-mono tracking-widest uppercase">
                         {t('fieldSubscription')}
                       </th>
                     )}
-                    <th className="text-fl-label text-fl-muted-4 w-[10%] px-5 py-3 text-right font-mono tracking-widest uppercase">
+                    <th className="text-fl-label text-fl-muted-4 w-[10%] px-5 py-3 text-end font-mono tracking-widest uppercase">
                       {t('actions')}
                     </th>
                   </tr>

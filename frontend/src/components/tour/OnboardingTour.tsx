@@ -110,7 +110,7 @@ export default function OnboardingTour() {
             <span className="text-fl-label text-fl-muted-2 font-mono tracking-widest uppercase">
               {t(`step${step + 1}.label`)}
               {stripeEnabled && PREMIUM_STEPS.has(step) && (
-                <span className="text-fl-accent ml-1">★</span>
+                <span className="text-fl-accent ms-1">★</span>
               )}
             </span>
           </div>

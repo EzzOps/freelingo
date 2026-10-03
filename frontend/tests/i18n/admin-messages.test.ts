@@ -30,7 +30,7 @@ describe('admin i18n messages', () => {
 })
 
 describe('shared interface messages', () => {
-  it('renders generic errors and vocabulary counts in all fifteen locales', () => {
+  it('renders generic errors and vocabulary counts in all sixteen locales', () => {
     for (const [locale, messages] of Object.entries({ en, ...locales })) {
       const errors: string[] = []
       const t = createTranslator({

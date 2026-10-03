@@ -28,7 +28,7 @@ vi.mock('next/navigation', () => ({
   usePathname: () => '/admin/system',
 }))
 
-const locales = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ru', 'nl', 'pl', 'ro', 'tr', 'sv', 'da', 'fi', 'hr']
+const locales = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ru', 'nl', 'pl', 'ro', 'tr', 'sv', 'da', 'fi', 'hr', 'ar']
 const generatedTranslations = Object.fromEntries(
   locales.map((locale) => [
     locale,
@@ -119,6 +119,7 @@ describe('Admin system dashboard banner', () => {
     expect(JSON.parse(saveOptions.body).translations.da.title).toBe('da title')
     expect(JSON.parse(saveOptions.body).translations.fi.title).toBe('fi title')
     expect(JSON.parse(saveOptions.body).translations.hr.title).toBe('hr title')
+    expect(JSON.parse(saveOptions.body).translations.ar.title).toBe('ar title')
     expect(await screen.findByText('dashboardBanner.saveSuccess')).toBeVisible()
   })
 
@@ -145,7 +146,7 @@ describe('Admin system dashboard banner', () => {
       )
 
     render(<AdminSystemPage />)
-    expect(await screen.findByText('15/15 complete')).toBeInTheDocument()
+    expect(await screen.findByText('16/16 complete')).toBeInTheDocument()
     expect(screen.getAllByLabelText('dashboardBanner.fieldTitle')[0]).toHaveValue(
       'en title'
     )
@@ -198,7 +199,7 @@ describe('Admin system dashboard banner', () => {
 
     render(<AdminSystemPage />)
 
-    expect(await screen.findByText('10/15 complete')).toBeVisible()
+    expect(await screen.findByText('11/16 complete')).toBeVisible()
     expect(screen.getByText('dashboardBanner.save')).toBeDisabled()
 
     fireEvent.change(screen.getByLabelText('dashboardBanner.editTranslation'), {
@@ -213,7 +214,7 @@ describe('Admin system dashboard banner', () => {
     fireEvent.change(subtitle, { target: { value: tr.subtitle } })
     fireEvent.change(description, { target: { value: tr.description } })
 
-    expect(screen.getByText('11/15 complete')).toBeVisible()
+    expect(screen.getByText('12/16 complete')).toBeVisible()
     expect(screen.getByText('dashboardBanner.save')).toBeDisabled()
     fireEvent.change(screen.getByLabelText('dashboardBanner.editTranslation'), {
       target: { value: 'sv' },
@@ -228,7 +229,7 @@ describe('Admin system dashboard banner', () => {
     fireEvent.change(swedishDescription, {
       target: { value: sv.description },
     })
-    expect(screen.getByText('12/15 complete')).toBeVisible()
+    expect(screen.getByText('13/16 complete')).toBeVisible()
     expect(screen.getByText('dashboardBanner.save')).toBeDisabled()
     fireEvent.change(screen.getByLabelText('dashboardBanner.editTranslation'), {
       target: { value: 'da' },
@@ -241,7 +242,7 @@ describe('Admin system dashboard banner', () => {
     fireEvent.change(danishTitle, { target: { value: da.title } })
     fireEvent.change(danishSubtitle, { target: { value: da.subtitle } })
     fireEvent.change(danishDescription, { target: { value: da.description } })
-    expect(screen.getByText('13/15 complete')).toBeVisible()
+    expect(screen.getByText('14/16 complete')).toBeVisible()
     expect(screen.getByText('dashboardBanner.save')).toBeDisabled()
     fireEvent.change(screen.getByLabelText('dashboardBanner.editTranslation'), {
       target: { value: 'fi' },
@@ -254,7 +255,7 @@ describe('Admin system dashboard banner', () => {
     fireEvent.change(finnishTitle, { target: { value: fi.title } })
     fireEvent.change(finnishSubtitle, { target: { value: fi.subtitle } })
     fireEvent.change(finnishDescription, { target: { value: fi.description } })
-    expect(screen.getByText('14/15 complete')).toBeVisible()
+    expect(screen.getByText('15/16 complete')).toBeVisible()
     expect(screen.getByText('dashboardBanner.save')).toBeDisabled()
     fireEvent.change(screen.getByLabelText('dashboardBanner.editTranslation'), {
       target: { value: 'hr' },
@@ -267,7 +268,7 @@ describe('Admin system dashboard banner', () => {
     fireEvent.change(croatianTitle, { target: { value: hr.title } })
     fireEvent.change(croatianSubtitle, { target: { value: hr.subtitle } })
     fireEvent.change(croatianDescription, { target: { value: hr.description } })
-    expect(screen.getByText('15/15 complete')).toBeVisible()
+    expect(screen.getByText('16/16 complete')).toBeVisible()
     fireEvent.click(screen.getByText('dashboardBanner.save'))
     await waitFor(() => expect(mockApiFetch).toHaveBeenCalledTimes(2))
     const saved = JSON.parse(mockApiFetch.mock.calls[1][1].body)

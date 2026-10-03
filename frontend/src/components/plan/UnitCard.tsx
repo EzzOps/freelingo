@@ -99,7 +99,7 @@ export default function UnitCard({
       <button
         onClick={onClick}
         disabled={status.locked}
-        className={`group focus-visible:outline-fl-fg w-full text-left focus-visible:outline-2 focus-visible:outline-offset-2 ${
+        className={`group focus-visible:outline-fl-fg w-full text-start focus-visible:outline-2 focus-visible:outline-offset-2 ${
           status.locked
             ? 'cursor-default'
             : status.active

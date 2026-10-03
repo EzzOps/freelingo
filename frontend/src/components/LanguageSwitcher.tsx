@@ -98,14 +98,14 @@ export default function LanguageSwitcher() {
           {isSwitching ? '...' : tTarget(activeLanguage.code)}
         </span>
         {multiple && (
-          <span className="text-fl-label text-fl-muted-4 ml-auto">
+          <span className="text-fl-label text-fl-muted-4 ms-auto">
             {open ? '▴' : '▾'}
           </span>
         )}
       </button>
 
       {open && multiple && (
-        <div className="border-fl-border bg-fl-bg absolute top-full right-0 left-0 z-50 border py-1 shadow-lg">
+        <div className="border-fl-border bg-fl-bg absolute top-full end-0 start-0 z-50 border py-1 shadow-lg">
           {[...userLanguages]
             .sort((a, b) =>
               tTarget(a.target_language).localeCompare(
@@ -119,7 +119,7 @@ export default function LanguageSwitcher() {
                 <button
                   key={ulang.target_language}
                   onClick={() => handleSwitch(ulang.target_language)}
-                  className={`flex w-full items-center gap-2 px-5 py-2.5 text-left font-mono text-xs tracking-widest uppercase transition-colors ${
+                  className={`flex w-full items-center gap-2 px-5 py-2.5 text-start font-mono text-xs tracking-widest uppercase transition-colors ${
                     ulang.is_active
                       ? 'text-fl-fg bg-fl-surface'
                       : 'text-fl-muted-2 hover:text-fl-fg hover:bg-fl-surface'
@@ -134,12 +134,12 @@ export default function LanguageSwitcher() {
                   />
                   <span className="truncate">{tTarget(lang.code)}</span>
                   {ulang.plan?.cefr_level && (
-                    <span className="text-fl-label text-fl-accent ml-1 font-mono">
+                    <span className="text-fl-label text-fl-accent ms-1 font-mono">
                       {ulang.plan.cefr_level}
                     </span>
                   )}
                   {ulang.is_active && (
-                    <span className="text-fl-label text-fl-accent ml-auto">
+                    <span className="text-fl-label text-fl-accent ms-auto">
                       ✓
                     </span>
                   )}
