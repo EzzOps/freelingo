@@ -29,7 +29,7 @@ def test_render_template_escapes_user_controlled_values():
     assert "<img src=x onerror=alert(1)>" not in html
     assert '<a href="https://phishing.example">Click</a>' not in html
     assert "<strong>urgent</strong>" not in html
-    assert '<html lang="en">' in html
+    assert '<html lang="en" dir="ltr">' in html
     assert "&lt;img src=x onerror=alert(1)&gt;" in html
     assert "&lt;a href=&quot;https://phishing.example&quot;&gt;Click&lt;/a&gt;" in html
     assert "&lt;strong&gt;urgent&lt;/strong&gt; &amp; dangerous" in html
@@ -93,7 +93,8 @@ async def test_email_declares_the_language_of_its_rendered_content(
     send_message.assert_awaited_once()
     message = send_message.await_args.args[0]
     expected_locale = locale if locale in SUPPORTED_UI_LOCALES else "en"
-    assert f'<html lang="{expected_locale}">' in message.body
+    expected_dir = "rtl" if expected_locale == "ar" else "ltr"
+    assert f'<html lang="{expected_locale}" dir="{expected_dir}">' in message.body
     assert escape(catalog[expected_locale]["footer"], quote=True) in message.body
     assert "{{" not in message.body
 

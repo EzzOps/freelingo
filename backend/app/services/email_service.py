@@ -162,6 +162,14 @@ _VERIFY_I18N: dict[str, dict[str, str]] = {
         "link_fallback": "Ako gumb ne radi, kopiraj ovu poveznicu i zalijepi je u preglednik:",
         "footer": "Ako nisi stvorio/la ovaj račun, možeš zanemariti ovu poruku.",
     },
+    "ar": {
+        "greeting": "أهلاً بيك {name}،",
+        "subject": "فعّل إيميلك في FreeLingo",
+        "body": "شكراً لإنشاء حساب FreeLingo.<br />من فضلك فعّل عنوان إيميلك بالضغط على الزر أدناه. الرابط صالح لمدة <strong>24 ساعة</strong>.",
+        "button": "فعّل حسابي",
+        "link_fallback": "لو الزر مش شغال، انسخ الرابط ده والصقه في متصفحك:",
+        "footer": "لو أنت مش اللي عملت الحساب ده، تقدر تتجاهل البريد ده.",
+    },
 }
 
 _RESET_I18N: dict[str, dict[str, str]] = {
@@ -284,6 +292,14 @@ _RESET_I18N: dict[str, dict[str, str]] = {
         "button": "Postavi novu lozinku",
         "link_fallback": "Ako gumb ne radi, kopiraj ovu poveznicu i zalijepi je u preglednik:",
         "footer": "Ako nisi zatražio/la novu lozinku, možeš zanemariti ovu poruku.",
+    },
+    "ar": {
+        "greeting": "أهلاً بيك {name}،",
+        "subject": "إعادة تعيين كلمة السر",
+        "body": "طلبت إعادة تعيين كلمة السر بتاعتك.<br />اضغط على الزر أدناه عشان تعيّن كلمة سر جديدة. الرابط صالح لمدة <strong>1 ساعة</strong>.",
+        "button": "إعادة تعيين كلمة السر",
+        "link_fallback": "لو الزر مش شغال، انسخ الرابط ده والصقه في متصفحك:",
+        "footer": "لو أنت مش اللي طلب ده، تقدر تتجاهل البريد ده.",
     },
 }
 
@@ -438,6 +454,16 @@ _WELCOME_I18N: dict[str, dict[str, str]] = {
         "button": "Idi na nadzornu ploču",
         "footer": "Sretno s učenjem!",
     },
+    "ar": {
+        "greeting": "أهلاً بيك {name}،",
+        "subject": "أهلاً بيك في FreeLingo",
+        "body": "بدأت تجربتك في FreeLingo! 🎉<br />اتعلم بالطريقة اللي تناسبك مع دروس متكيفة ومحادثات صوتية وبطاقات ذكية.",
+        "step1": "<strong>اعمل التقييم.</strong> دقيقة واحدة وهتعرف مستواك الصحيح.",
+        "step2": "<strong>ولّد خطة دراسة.</strong> خطة شخصية بناءً على مستواك وأهدافك.",
+        "step3": "ابدأ دروسك — وأمتع نفسك!",
+        "button": "روح للداشبورد",
+        "footer": "لو عندك أي أسئلة، ابعت لنا من داخل التطبيق.",
+    },
 }
 
 
@@ -531,6 +557,12 @@ _DELETION_I18N: dict[str, dict[str, str]] = {
         "greeting": "Pozdrav {name},",
         "body": "Tvoj FreeLingo račun uspješno je izbrisan. Svi tvoji podaci trajno su uklonjeni s naših poslužitelja.",
         "footer": "Ako nisi zatražio/la brisanje, odmah nam se javi.",
+    },
+    "ar": {
+        "subject": "حسابك في FreeLingo اتمسح",
+        "greeting": "أهلاً {name},",
+        "body": "حسابك في FreeLingo اتمسح بنجاح. كل بياناتك اتمسحت نهائي من سيرفراتنا.",
+        "footer": "لو إنت مش اللي طلب المسح ده، كلّمنا فوراً.",
     },
 }
 
@@ -634,14 +666,6 @@ _CONTACT_I18N: dict[str, dict[str, str]] = {
         "message_label": "Mesaj",
         "footer": "FreeLingo iletişim formu aracılığıyla gönderildi",
     },
-    "ar": {
-        "greeting": "أهلاً بيك {name}،",
-        "subject": "فعّل إيميلك في FreeLingo",
-        "body": "شكراً لإنشاء حساب FreeLingo.<br />من فضلك فعّل عنوان إيميلك بالضغط على الزر أدناه. الرابط صالح لمدة <strong>24 ساعة</strong>.",
-        "button": "فعّل حسابي",
-        "link_fallback": "لو الزر مش شغال، انسخ الرابط ده والصقه في متصفحك:",
-        "footer": "لو أنت مش اللي عملت الحساب ده، تقدر تتجاهل البريد ده.",
-    },
 
     "sv": {
         "email_title": "Meddelande från kontaktformuläret",
@@ -678,6 +702,15 @@ _CONTACT_I18N: dict[str, dict[str, str]] = {
         "subject_label": "Predmet",
         "message_label": "Poruka",
         "footer": "Poslano putem FreeLingova kontaktnog obrasca",
+    },
+    "ar": {
+        "email_title": "رسالة من نموذج التواصل",
+        "subject_prefix": "[تواصل FreeLingo]",
+        "logo": "FreeLingo: نموذج التواصل",
+        "from_label": "من",
+        "subject_label": "الموضوع",
+        "message_label": "الرسالة",
+        "footer": "اتبعت عن طريق نموذج التواصل بتاع FreeLingo",
     },
 }
 
@@ -825,14 +858,6 @@ _FEEDBACK_I18N: dict[str, dict[str, str]] = {
         "cta": "Yönetim panelinde görüntüle",
         "footer": "FreeLingo geri bildirim panosu",
     },
-    "ar": {
-        "greeting": "أهلاً بيك {name}،",
-        "subject": "إعادة تعيين كلمة السر",
-        "body": "طلبت إعادة تعيين كلمة السر بتاعتك.<br />اضغط على الزر أدناه عشان تعيّن كلمة سر جديدة. الرابط صالح لمدة <strong>24 ساعة</strong>.",
-        "button": "إعادة تعيين كلمة السر",
-        "link_fallback": "لو الزر مش شغال، انسخ الرابط ده والصقه في متصفحك:",
-        "footer": "لو أنت مش اللي طلب ده، تقدر تتجاهل البريد ده.",
-    },
 
     "sv": {
         "email_title": "Ny feedback har skickats in",
@@ -885,6 +910,19 @@ _FEEDBACK_I18N: dict[str, dict[str, str]] = {
         "description_label": "Opis",
         "cta": "Pogledaj u administraciji",
         "footer": "FreeLingova ploča za povratne informacije",
+    },
+    "ar": {
+        "email_title": "فيدباك جديد اتبعت",
+        "logo": "FreeLingo: فيدباك جديد",
+        "feature_label": "اقتراح ميزة",
+        "bug_label": "تقرير خطأ",
+        "feature_subject_prefix": "[اقتراح ميزة]",
+        "bug_subject_prefix": "[تقرير خطأ]",
+        "author_label": "اتبعت بواسطة",
+        "title_label": "العنوان",
+        "description_label": "الوصف",
+        "cta": "شوف في لوحة التحكم",
+        "footer": "لوحة فيدباك FreeLingo",
     },
 }
 
@@ -1021,16 +1059,6 @@ _REVIEW_I18N: dict[str, dict[str, str]] = {
         "cta": "Yönetim panelinde görüntüle",
         "footer": "FreeLingo yorum moderasyonu",
     },
-    "ar": {
-        "greeting": "أهلاً بيك {name}،",
-        "subject": "أهلاً بيك في FreeLingo",
-        "body": "بدأت تجربتك في FreeLingo! 🎉<br />اتعلم بالطريقة اللي تناسبك مع دروس متكيفة ومحادثات صوتية وبطاقات ذكية.",
-        "step1": "<strong>اعمل التقييم.</strong> دقيقة واحدة وهتعرف مستواك الصحيح.",
-        "step2": "<strong>ولّد خطة دراسة.</strong> خطة شخصية بناءً على مستواك وأهدافك.",
-        "step3": "ابدأ دروسك — وأمتع نفسك!",
-        "button": "روح للداشبورد",
-        "footer": "لو عندك أي أسئلة، ابعت لنا من داخل التطبيق.",
-    },
 
     "sv": {
         "email_title": "Nytt omdöme har skickats in",
@@ -1080,6 +1108,18 @@ _REVIEW_I18N: dict[str, dict[str, str]] = {
         "cta": "Pogledaj u administraciji",
         "footer": "Moderiranje FreeLingo recenzija",
     },
+    "ar": {
+        "email_title": "تقييم جديد اتبعت",
+        "subject_prefix": "[تقييم جديد]",
+        "logo": "FreeLingo: تقييم جديد",
+        "author_label": "اتبعت بواسطة",
+        "rating_label": "التقييم",
+        "language_label": "لغة التعلم",
+        "comment_label": "التعليق",
+        "empty_comment": "مفيش تعليق.",
+        "cta": "شوف في لوحة التحكم",
+        "footer": "مراجعة تقييمات FreeLingo",
+    },
 }
 
 
@@ -1087,7 +1127,8 @@ def _render_template(name: str, context: dict, locale: str = "en") -> str:
     """Render a plain HTML template, escaping interpolated values by default."""
     path = _TEMPLATES_DIR / name
     html = path.read_text(encoding="utf-8")
-    context = {**context, "locale": locale if locale in _VERIFY_I18N else "en"}
+    resolved = locale if locale in _VERIFY_I18N else "en"
+    context = {**context, "locale": resolved, "dir": "rtl" if resolved == "ar" else "ltr"}
     for key, value in context.items():
         rendered = str(value) if isinstance(value, _SafeHtml) else escape(str(value), quote=True)
         html = html.replace(f"{{{{{key}}}}}", rendered)
