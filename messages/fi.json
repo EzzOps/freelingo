@@ -1074,7 +1074,8 @@
         "sv": "Ruotsi",
         "da": "Tanska",
         "fi": "Suomi",
-        "hr": "Kroatia"
+        "hr": "Kroatia",
+        "ar": "arabia"
       }
     }
   },
@@ -1274,7 +1275,8 @@
     "lessonsLabel": "Oppitunnit",
     "flashcardsLabel": "Muistikortit",
     "viewDetails": "Näytä tiedot",
-    "supportedLanguages": "Saatavilla olevat kielet"
+    "supportedLanguages": "Saatavilla olevat kielet",
+    "ar": "arabia"
   },
   "targetLanguages": {
     "en-US": "Amerikanenglanti",

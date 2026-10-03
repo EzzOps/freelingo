@@ -1074,7 +1074,8 @@
         "sv": "Szwedzki",
         "da": "Duński",
         "fi": "Fiński",
-        "hr": "Chorwacki"
+        "hr": "Chorwacki",
+        "ar": "arabski"
       }
     }
   },
@@ -1275,7 +1276,7 @@
     "flashcardsLabel": "Fiszki",
     "viewDetails": "Zobacz szczegóły",
     "supportedLanguages": "Dostępne języki",
-    "ar": "Arabic"
+    "ar": "arabski"
   },
   "targetLanguages": {
     "en-US": "Angielski amerykański",

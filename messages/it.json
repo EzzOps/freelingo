@@ -1074,7 +1074,8 @@
         "sv": "Svedese",
         "da": "Danese",
         "fi": "Finlandese",
-        "hr": "Croato"
+        "hr": "Croato",
+        "ar": "Arabo"
       }
     }
   },
@@ -1275,7 +1276,7 @@
     "flashcardsLabel": "Flashcard",
     "viewDetails": "Vedi dettagli",
     "supportedLanguages": "Lingue disponibili",
-    "ar": "Arabic"
+    "ar": "Arabo"
   },
   "targetLanguages": {
     "en-US": "Inglese americano",

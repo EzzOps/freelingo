@@ -1074,7 +1074,8 @@
         "sv": "Suedeză",
         "da": "Daneză",
         "fi": "Finlandeză",
-        "hr": "Croată"
+        "hr": "Croată",
+        "ar": "arabă"
       }
     }
   },
@@ -1275,7 +1276,7 @@
     "flashcardsLabel": "Flashcard-uri",
     "viewDetails": "Vezi detalii",
     "supportedLanguages": "Limbi disponibile",
-    "ar": "Arabic"
+    "ar": "arabă"
   },
   "targetLanguages": {
     "en-US": "Engleză americană",

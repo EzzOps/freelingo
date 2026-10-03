@@ -1074,7 +1074,8 @@
         "sv": "Švedski",
         "da": "Danski",
         "fi": "Finski",
-        "hr": "Hrvatski"
+        "hr": "Hrvatski",
+        "ar": "arapski"
       }
     }
   },
@@ -1274,7 +1275,8 @@
     "lessonsLabel": "Lekcije",
     "flashcardsLabel": "Kartice",
     "viewDetails": "Pogledaj detalje",
-    "supportedLanguages": "Dostupni jezici"
+    "supportedLanguages": "Dostupni jezici",
+    "ar": "arapski"
   },
   "targetLanguages": {
     "en-US": "Američki engleski",

@@ -1074,7 +1074,8 @@
         "sv": "Zweeds",
         "da": "Deens",
         "fi": "Fins",
-        "hr": "Kroatisch"
+        "hr": "Kroatisch",
+        "ar": "Arabisch"
       }
     }
   },
@@ -1275,7 +1276,7 @@
     "flashcardsLabel": "Flashcards",
     "viewDetails": "Details bekijken",
     "supportedLanguages": "Beschikbare talen",
-    "ar": "Arabic"
+    "ar": "Arabisch"
   },
   "targetLanguages": {
     "en-US": "Amerikaans Engels",

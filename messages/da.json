@@ -1074,7 +1074,8 @@
         "sv": "Svensk",
         "da": "Dansk",
         "fi": "Finsk",
-        "hr": "Kroatisk"
+        "hr": "Kroatisk",
+        "ar": "arabisk"
       }
     }
   },
@@ -1274,7 +1275,8 @@
     "lessonsLabel": "Lektioner",
     "flashcardsLabel": "Flashcards",
     "viewDetails": "Se detaljer",
-    "supportedLanguages": "Tilgængelige sprog"
+    "supportedLanguages": "Tilgængelige sprog",
+    "ar": "arabisk"
   },
   "targetLanguages": {
     "en-US": "Amerikansk engelsk",

@@ -1074,7 +1074,8 @@
         "sv": "İsveççe",
         "da": "Danca",
         "fi": "Fince",
-        "hr": "Hırvatça"
+        "hr": "Hırvatça",
+        "ar": "Arapça"
       }
     }
   },
@@ -1275,7 +1276,7 @@
     "flashcardsLabel": "Bilgi Kartları",
     "viewDetails": "Ayrıntıları görüntüle",
     "supportedLanguages": "Kullanılabilir diller",
-    "ar": "Arabic"
+    "ar": "Arapça"
   },
   "targetLanguages": {
     "en-US": "Amerikan İngilizcesi",
