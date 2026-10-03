@@ -8,7 +8,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ### Added
 
-- Arabic (`ar`) interface and native-language option across registration, Settings, and administration, with translated UI, learning feedback, voice-session titles, month names, and emails. Arabic is not a study language.
+- Arabic (`ar`) as the sixteenth interface and native-language option. The `messages/ar.json` catalog mirrors `en.json` exactly (1,533 keys, including `targetLanguages` and `admin.dashboardBanner.locales`); key, placeholder, ICU plural, and rich-text-tag parity is enforced by `backend/tests/test_message_catalogs.py`.
+- Arabic strings for all seven transactional emails (verification, password reset, welcome, account deletion, contact, feedback, review), placed in the correct per-type dictionaries with the exact English key sets.
+- Arabic entry for lesson multiple-choice answer feedback (`_ANSWER_FEEDBACK` in `backend/app/routers/lessons.py`).
+- Dashboard announcements accept `ar` as source locale and translation. The stored schema keeps older banners readable (`ar` optional on read); saving requires all sixteen translations. The LLM translate prompt and the admin editor offer Arabic.
+- Localized names for the new language in every existing catalog (`languages.ar` and `admin.dashboardBanner.locales.ar`), replacing the previous literal "Arabic" label.
+- RTL document direction: `layout.tsx` sets `dir` from the interface locale, email templates render `<html lang dir>`, target-language content blocks pin `dir="ltr"` inside RTL interfaces, and physical layout utilities (`ml/mr/pl/pr/left/right/text-left/text-right/border-l/border-r`) were converted to logical properties (`ms/me/ps/pe/start/end/text-start/text-end/border-s/border-e`) across the frontend.
+
+### Fixed
+
+- Arabic email translations previously landed in the wrong dictionaries (verification text in contact, reset text in feedback, welcome text in review), causing HTTP 502 on the contact form for Arabic-native administrators and missing keys in feedback/review notifications. The Arabic password-reset email also promised 24-hour token validity; it now matches the actual 1-hour expiry.
 
 ## [1.9.25] - 2026-09-25
 
